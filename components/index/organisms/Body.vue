@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index-organisms-body">
     <BodyTitle />
     <CheckBoxes />
   </div>

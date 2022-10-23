@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index-molecules-check-boxes">
     <div v-for="i in 10" :key="i.toString()">
       <CheckBox />
     </div>
