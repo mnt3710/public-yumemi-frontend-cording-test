@@ -4,3 +4,9 @@
     <label>sample</label>
   </div>
 </template>
+
+<style scoped>
+.index-atoms-check-box {
+  margin: 10px;
+}
+</style>

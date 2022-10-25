@@ -14,3 +14,10 @@ export default Vue.extend({
   components: { CheckBox },
 })
 </script>
+
+<style scoped>
+.index-molecules-check-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+</style>
