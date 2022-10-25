@@ -1,7 +1,7 @@
 <template>
   <div class="index-molecules-check-boxes">
     <div v-for="value in prefNameList" :key="value.toString()">
-      <CheckBox />
+      <CheckBox :boxText="value" />
     </div>
   </div>
 </template>
