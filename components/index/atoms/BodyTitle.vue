@@ -6,7 +6,7 @@
 
 <style scoped>
 .index-atoms-body-title {
-  padding: 20px 20px 5px 20px;
+  margin: 25px 30px 10px 30px;
   font-weight: bold;
 }
 </style>
