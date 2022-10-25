@@ -25,6 +25,6 @@ export default Vue.extend({
 .index-molecules-check-boxes {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 </style>
