@@ -1,7 +1,7 @@
 <template>
   <div class="index-molecules-check-boxes">
-    <div v-for="value in prefNameList" :key="value.toString()">
-      <CheckBox :boxText="value" />
+    <div v-for="value of prefList" :key="value">
+      <CheckBox :boxText="value.prefName" />
     </div>
   </div>
 </template>
@@ -24,6 +24,12 @@ export default Vue.extend({
         '福島県',
       ],
     }
+  },
+  props: {
+    prefList: {
+      default: '',
+      type: Array,
+    },
   },
 })
 </script>

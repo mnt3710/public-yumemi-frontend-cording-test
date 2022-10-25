@@ -1,7 +1,7 @@
 <template>
   <div class="index-organisms-body">
     <BodyTitle />
-    <CheckBoxes />
+    <CheckBoxes :prefList="prefList" />
   </div>
 </template>
 
@@ -14,6 +14,12 @@ export default Vue.extend({
   components: {
     BodyTitle,
     CheckBoxes,
+  },
+  props: {
+    prefList: {
+      default: [],
+      type: Array,
+    },
   },
 })
 </script>
