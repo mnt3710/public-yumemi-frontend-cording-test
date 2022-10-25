@@ -18,7 +18,7 @@ export default Vue.extend({
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  height: 5.5vh;
   background-color: #3856ff8f;
 }
 </style>
