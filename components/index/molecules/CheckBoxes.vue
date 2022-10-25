@@ -1,6 +1,6 @@
 <template>
   <div class="index-molecules-check-boxes">
-    <div v-for="i in 10" :key="i.toString()">
+    <div v-for="value in prefNameList" :key="value.toString()">
       <CheckBox />
     </div>
   </div>
@@ -12,6 +12,19 @@ import CheckBox from '../atoms/CheckBox.vue'
 
 export default Vue.extend({
   components: { CheckBox },
+  data() {
+    return {
+      prefNameList: [
+        '北海道',
+        '青森県',
+        '岩手県',
+        '秋田県',
+        '山形県',
+        '宮城県',
+        '福島県',
+      ],
+    }
+  },
 })
 </script>
 
