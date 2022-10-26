@@ -1,6 +1,6 @@
 <template>
   <div class="index-atoms-check-box">
-    <input type="checkbox" />
+    <input type="checkbox" @change="onChangeCheck()" />
     <label>{{ boxText }}</label>
   </div>
 </template>
@@ -12,6 +12,11 @@ export default Vue.extend({
     boxText: {
       default: '',
       type: String,
+    },
+  },
+  methods: {
+    onChangeCheck(): void {
+      this.$emit('onChecked', this.boxText)
     },
   },
 })

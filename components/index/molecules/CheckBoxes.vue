@@ -10,12 +10,33 @@
 import Vue from 'vue'
 import CheckBox from '../atoms/CheckBox.vue'
 
+type DataType = {
+  checkedValueList: Array<string>
+  vForKey: number
+}
+
 export default Vue.extend({
   components: { CheckBox },
+  data(): DataType {
+    return {
+      checkedValueList: [],
+      vForKey: 0,
+    }
+  },
   props: {
     prefList: {
       default: '',
       type: Array,
+    },
+  },
+  methods: {
+    addCheckedList(value: string) {
+      const checkedPositionList = this.checkedValueList.findIndex(
+        (x) => x == value
+      )
+      checkedPositionList != -1
+        ? this.checkedValueList.splice(checkedPositionList, 1)
+        : this.checkedValueList.push(value)
     },
   },
 })
